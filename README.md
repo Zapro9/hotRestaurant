@@ -5,7 +5,7 @@
 
 ![Hot Restaurant Image](Images/HotRestaurant.png)
 
-## Notes
+##
 
 * You will NOT need a MySQL Database for this exercise.
 * Current app doesn't have admin handling. We'll deal with that at a later time.
