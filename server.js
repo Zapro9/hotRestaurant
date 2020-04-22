@@ -6,7 +6,7 @@ var PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
-
+var availableTables = 10;
 //Data
 //================================================================================================
 
@@ -62,7 +62,49 @@ const waitlist = [
      return res.json(waitlist);
 
  })
+ 
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
   
+
+
+  //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ifff's~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\
+
+  //fill tables function
+  //fill waitlist function
+  //if the tables is full, call waitlist
+  
+  var personObject = { ////~~~~~~~~this will be changed to a dynamic element that changes with user inputs
+    routeName: "wqqq",
+    name: "ddd",
+    phone: "fff",
+    email: "eee",
+    id: "333"
+  }
+  
+  
+  availChecker(personObject);
+  
+
+  function availChecker (personObject){
+    if (tables.length<availableTables){
+        tableFill(personObject);
+      } else {
+          waitFill(personObject);
+      }
+  }
+
+  function tableFill (personObject) {
+      tables.push(personObject);
+  }
+
+  function waitFill (personObject){
+      waitlist.push(personObject);
+  }
+
+
+//   console.log(tables);
+//   console.log(waitlist);
+
+
