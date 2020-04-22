@@ -1,7 +1,7 @@
 .jumbotron {
     text-align: center;
     background-size: cover;
-    background-color: rgba(75, 154, 185, 0.808);
+    background-color: rgba(53, 132, 163, 0.808);
     border-radius: 2px;
     box-shadow: 0px 0px 0px 6px rgb(41, 35, 1);
 
@@ -65,3 +65,25 @@ body {
     font-size: 25px;
     background-color: rgb(153, 153, 153);
 }
+
+.form-control {
+    outline-style: solid;
+    outline-color: rgba(0, 0, 0, 0.459);
+}
+
+.reserveCard {
+    padding: 8px;
+    background-color: gray;
+    text-align: center;
+}
+
+.reserveBody {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+::placeholder {
+    color: red;
+
+  }
