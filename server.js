@@ -75,7 +75,7 @@ app.listen(PORT, function() {
   //fill waitlist function
   //if the tables is full, call waitlist
   
-  var personObject = { ////~~~~~~~~this will be changed to a dynamic thing that changes with user inputs
+  var personObject = { ////~~~~~~~~this will be changed to a dynamic element that changes with user inputs
     routeName: "wqqq",
     name: "ddd",
     phone: "fff",
