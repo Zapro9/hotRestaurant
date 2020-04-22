@@ -30,7 +30,7 @@
     <br>
     <div class="centeredButtons">
         <a href="tables.html">
-            <button class="btn btn-primary btn-lg"><span class="fa fa-list-alt"></span> View Tables</button>
+            <button class="btn btn-primary btn-lg" id="viewTablesBtn"><span class="fa fa-list-alt"></span> View Tables</button>
         </a>
         <a href="reservations.html">
             <button class="btn btn-danger btn-lg"><span class="fa fa-credit-card"></span> Make Reservations</button>
@@ -38,6 +38,17 @@
         </div>
   </div>   
 </div>
+
+<script>
+    
+$("#viewTablesBtn").on("click", function(){
+    $.get("/api/tables" , function(data){
+        console.log(data);
+    })
+})
+
+
+</script>
 
 </body>
 </html>
