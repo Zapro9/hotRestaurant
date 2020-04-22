@@ -80,13 +80,18 @@ app.listen(PORT, function() {
     name: "ddd",
     phone: "fff",
     email: "eee",
-    id: ""
+    id: "333"
   }
+  
+  availChecker(personObject);
+  
 
-  if (tables.length<availableTables){
-    tableFill(personObject);
-  } else {
-      waitFill(personObject);
+  function availChecker (personObject){
+    if (tables.length<availableTables){
+        tableFill(personObject);
+      } else {
+          waitFill(personObject);
+      }
   }
 
   function tableFill (personObject) {
@@ -96,6 +101,7 @@ app.listen(PORT, function() {
   function waitFill (personObject){
       waitlist.push(personObject);
   }
+
 
 //   console.log(tables);
 //   console.log(waitlist);
