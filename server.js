@@ -71,6 +71,7 @@ app.use(express.json());
      //this route outputs JSON data for all of the waitlist
       //make an AJAX call to GET the JSON from this route, then loop through and render each waitlisted to the page
  })
+ 
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
