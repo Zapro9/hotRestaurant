@@ -36,17 +36,18 @@ const waitlist = [
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ROUTES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\
 
  app.get("/", function(req, res){
-     //route for the homepage
+    res.sendFile(path.join(__dirname, "index.html"));
  })
 
- app.get("/reserve", function(req, res) {
-     //route for the reservation form
+ app.get("/reservations", function(req, res) {
+    res.sendFile(path.join(__dirname, "reservations.html"));
  })
 
  app.get("/tables", function(req, res) {
      //a route to render the HTML tables page
      //blah blah integrate AJAX to get both the tables and the waitlist
      //API data (JSON) and render that data to the page
+     res.sendFile(path.join(__dirname, "tables.html"));
  })
 
  app.get("/api/tables", function(req, res) {
